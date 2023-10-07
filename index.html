@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Soal Nomor 1: If, Else If, Nested
+        console.log("===Soal Nomor 1: If, Else If, Nested===");
+        // Declare variables
+        var age = 17;
+        var time = 10;
+    
+        // If statement
+        if (age >= 18) {
+          console.log("You are an adult.");
+        } else {
+          console.log("You are not an adult.");
+        }
+    
+        // Else if statement
+        if (time >= 12 && time <= 18) {
+          console.log("It is afternoon.");
+        } else if (time >= 19 && time <= 24) {
+          console.log("It is evening.");
+        } else {
+          console.log("It is morning or night.");
+        }
+    
+        // Nested if statement
+        if (age >= 18) {
+          if (time >= 12 && time <= 18) {
+            console.log("You are an adult and it is afternoon.");
+          } else if (time >= 19 && time <= 24) {
+            console.log("You are an adult and it is evening.");
+          } else {
+            console.log("You are an adult and it is morning or night.");
+          }
+        } else {
+          if (time >= 12 && time <= 18) {
+            console.log("You are not an adult and it is afternoon.");
+          } else if (time >= 19 && time <= 24) {
+            console.log("You are not an adult and it is evening.");
+          } else {
+            console.log("You are not an adult and it is morning or night.");
+          }
+        }
+
+        // Soal Nomor 2: Switch Case
+        console.log("===Soal Nomor 2: Switch Case===");
+        // Declare a variable
+        var day = "Saturday";
+
+        // Switch statement
+        switch (day) {
+          case "Monday":
+            console.log("It is Monday.");
+            break;
+          case "Tuesday":
+            console.log("It is Tuesday.");
+            break;
+          case "Wednesday":
+            console.log("It is Wednesday.");
+            break;
+          case "Thursday":
+            console.log("It is Thursday.");
+            break;
+          case "Friday":
+            console.log("It is Friday.");
+            break;
+          case "Saturday":
+            console.log("It is Saturday.");
+            break;
+          case "Sunday":
+            console.log("It is Sunday.");
+            break;
+          default:
+            console.log("Invalid day.");
+          }
+
+        // Soal Nomor 3: For Statement
+        console.log("===Soal Nomor 3: For Statement===");
+        // Declare a variable
+        var i;
+
+        // For loop
+        for (i = 1; i <= 5; i++) {
+          console.log(i);
+        }
+
+        // Soal Nomor 4: While and Do While
+        console.log("===Soal Nomor 4: While and Do While===");
+        // Declare a variable
+        var i = 1;
+
+        // While loop
+        while (i <= 5) {
+          console.log(i);
+          i++;
+        }
+
+        // Declare a variable
+        var i = 1;
+
+        // Do while loop
+        do {
+          console.log(i);
+          i++;
+        } while (i < 5);
+
+        // Soal Nomor 5: Function
+        console.log("===Soal Nomor 5: Function===");
+
+        function tambah(angkapertama, angkakedua) {
+          return angkapertama + angkakedua;
+        }
+
+        // Call the function
+        var hasil = tambah(5, 4);
+
+        // Display the result
+        console.log(hasil);
+
+      </script>
+
+</body>
+</html>
